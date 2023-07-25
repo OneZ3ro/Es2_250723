@@ -289,12 +289,27 @@ footer a {
   section h2 {
     position: absolute;
     width: 30vw;
+    max-width: 120px;
     padding-block: 3px;
     top: -15px;
+    left: 20px;
+    box-shadow: 4px 4px 5px gray;
+  }
+
+  aside .div-tag-icon {
+    position: relative;
   }
 
   aside h2 {
     font-size: 30px;
+  }
+
+  .div-tag-icon .fa-tag {
+    position: absolute;
+    font-size: 60px;
+    color: #a3a3a3;
+    top: 7px;
+    right: 7px;
   }
 
   footer p,
@@ -331,6 +346,30 @@ footer a {
   }
 }
 
+@media screen and (min-width: 684px) {
+  #html-logo {
+    max-height: 7vh;
+  }
+
+  #wrap p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #icone .far.fa-plus-square {
+    color: blue;
+    top: 220px;
+    bottom: inherit;
+  }
+
+  #icone .far.fa-calendar-alt {
+    color: blue;
+    top: 280px;
+    bottom: initial;
+  }
+}
+
 @media screen and (min-width: 768px) {
   table {
     width: 50vw;
@@ -338,7 +377,6 @@ footer a {
   }
 
   section h2 {
-    text-transform: initial;
     font-size: 20px;
   }
 
@@ -371,6 +409,13 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+  header,
+  main,
+  footer {
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+
   header {
     position: fixed;
     text-align: left;
@@ -402,8 +447,20 @@ footer a {
     margin-top: 110px;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  #linea-curva {
+    width: 53%;
+    right: 0;
+    bottom: 20px;
+    opacity: 0.55;
+  }
+
   table {
     width: 70vw;
+    max-width: 80%;
     margin: 70px auto;
   }
 
@@ -418,19 +475,38 @@ footer a {
   }
 
   section h2 {
-    font-size: 18px;
-    border-radius: 20px;
+    font-size: 20px;
   }
 
   input {
-    min-width: 30vw;
+    min-width: 20vw;
     min-height: 5vh;
+  }
+
+  aside div:not(:first-of-type) {
+    margin-left: -4px;
   }
 
   aside div {
     display: inline-block;
     width: 33.3%;
-    margin-left: -3px;
+  }
+
+  #icone .far.fa-plus-square,
+  #icone .far.fa-calendar-alt,
+  #icone .fa-caret-square-up {
+    bottom: initial;
+    right: 3vw;
+  }
+
+  #icone .far.fa-plus-square {
+    color: blue;
+    top: 120px;
+  }
+
+  #icone .far.fa-calendar-alt {
+    color: blue;
+    top: 180px;
   }
 }
 
